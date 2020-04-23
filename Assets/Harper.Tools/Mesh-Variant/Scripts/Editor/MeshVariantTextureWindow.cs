@@ -22,7 +22,7 @@ public class MeshVariantTextureWindow : EditorWindow
                         prop.serializedObject.Update();
                         prop.vector2IntValue = new Vector2Int(x, y);
                         prop.serializedObject.ApplyModifiedProperties();
-                        GetWindow<MeshVariantTextureWindow>().Close();
+                        Close();
                     }
                 }
                 EditorGUILayout.EndHorizontal();

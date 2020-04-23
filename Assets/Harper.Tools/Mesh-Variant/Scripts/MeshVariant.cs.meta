@@ -3,7 +3,9 @@ guid: d33f512c3e0840b4b94ca98276f9c65a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - meshFilter: {instanceID: 0}
+  - texture: {fileID: 2800000, guid: 69037499040a91f488b11903b0bb458c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

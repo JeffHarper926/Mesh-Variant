@@ -50,9 +50,19 @@ public class VariantUVDrawer : PropertyDrawer
         MeshVariantTextureWindow window = new MeshVariantTextureWindow();
         window.ShowUtility();
         window.prop = property;
+        SerializedProperty texture = property.serializedObject.FindProperty("texture");
+        if (texture.objectReferenceValue)
+        {
+            if (texture.objectReferenceValue.GetType() == typeof(Texture2D))
+            {
+                Texture2D tex = (Texture2D)texture.objectReferenceValue;
+                window.texture = tex;
+                window.minSize = new Vector2((tex.width * 30) + 30, (tex.height * 30) + 40);
+            }
+        }
     }
 
-    private Texture2D CreateColorTexture(Color color)
+        private Texture2D CreateColorTexture(Color color)
     {
         Texture2D newTex = new Texture2D(2, 2);
         for (int i = 0; i < newTex.width; i++)

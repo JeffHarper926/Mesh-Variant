@@ -6,7 +6,7 @@ public class MeshVariant : MonoBehaviour
 {
     public bool includeDefault = true; 
     public MeshFilter meshFilter;
-    public Texture2D texture; 
+    public Texture2D texture;
 
     public List<VariantUV> variants = new List<VariantUV>();
 
@@ -29,6 +29,11 @@ public class MeshVariant : MonoBehaviour
         if(!meshFilter)
             meshFilter = GetComponent<MeshFilter>();
 
+        Generate();
+    }
+
+    public void Generate()
+    {
         int rand = Random.Range(0, variants.Count + 1);
 
         if (rand == 0 && includeDefault)

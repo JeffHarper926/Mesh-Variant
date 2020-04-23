@@ -21,7 +21,8 @@ public class MeshVariantEditor : Editor
 
     private void OnDisable()
     {
-        EditorWindow.GetWindow<MeshVariantTextureWindow>().Close();
+        if(EditorWindow.GetWindow<MeshVariantTextureWindow>())
+            EditorWindow.GetWindow<MeshVariantTextureWindow>().Close();
     }
 
     public override void OnInspectorGUI()

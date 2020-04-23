@@ -95,6 +95,8 @@ MonoBehaviour:
   includeDefault: 1
   meshFilter: {fileID: 9059372748480327969}
   texture: {fileID: 2800000, guid: 69037499040a91f488b11903b0bb458c, type: 3}
+  sharedMesh: {fileID: 8108563764783910780, guid: 77f3c85e6203875469b848bd80e8b7cd,
+    type: 3}
   variants:
   - coords:
     - name: 
@@ -156,3 +158,23 @@ MonoBehaviour:
     - name: 
       currentUV: {x: 2, y: 1}
       newUV: {x: 3, y: 2}
+  - coords:
+    - name: 
+      currentUV: {x: 6, y: 4}
+      newUV: {x: 7, y: 2}
+    - name: 
+      currentUV: {x: 5, y: 7}
+      newUV: {x: 7, y: 5}
+    - name: 
+      currentUV: {x: 2, y: 1}
+      newUV: {x: 7, y: 6}
+  - coords:
+    - name: 
+      currentUV: {x: 6, y: 4}
+      newUV: {x: 7, y: 7}
+    - name: 
+      currentUV: {x: 5, y: 7}
+      newUV: {x: 3, y: 5}
+    - name: 
+      currentUV: {x: 2, y: 1}
+      newUV: {x: 0, y: 7}
